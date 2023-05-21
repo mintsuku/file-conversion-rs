@@ -12,10 +12,17 @@ pub fn convert_png_to_jpeg() {
 
     match path_result {
         Ok(Some(path)) => {
+            let mut output_path = match dirs::download_dir() {
+                Some(path) => path,
+                None => {
+                    eprintln!("Failed to determine the user's download directory.");
+                    return;
+                }
+            };
             println!("Selected file: {:?}", path);
             let file_name = path.file_name().unwrap().to_str().unwrap();
             let file_name2 = file_name.trim_end_matches(".png");
-            let output_path = PathBuf::from(format!("src/results/jpegs/{}.jpeg", file_name2));
+            output_path.push(format!("{}.jpeg", file_name2));
             let jpeg_path = Path::new(&output_path);
             match open(&path) {
                 Ok(png_image) => {

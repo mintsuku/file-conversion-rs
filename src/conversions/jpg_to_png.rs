@@ -2,8 +2,10 @@ use dialoguer::Input;
 use image::{codecs::png, open, ImageFormat};
 use native_dialog::FileDialog;
 use std::env::current_dir;
+use std::env;
 use std::path::Path;
 use std::path::PathBuf;
+extern crate dirs;
 
 
 pub fn convert_jpeg_to_png() {
@@ -12,12 +14,22 @@ pub fn convert_jpeg_to_png() {
         .add_filter("JPEG Image", &["jpeg"])
         .show_open_single_file();
 
+        
+
     match path_result {
         Ok(Some(path)) => {
+            let mut output_path = match dirs::download_dir() {
+                Some(path) => path,
+                None => {
+                    eprintln!("Failed to determine the user's download directory.");
+                    return;
+                }
+            };
             println!("Selected file: {:?}", path);
             let file_name = path.file_name().unwrap().to_str().unwrap();
             let file_name2 = file_name.trim_end_matches(".jpeg");
-            let output_path = PathBuf::from(format!("src/results/pngs/{}.png", file_name2));
+            println!("{:?}", output_path);
+            output_path.push(format!("{}.png", file_name2));
             let png_path = Path::new(&output_path);
             match open(&path) {
                 Ok(jpg_image) => {

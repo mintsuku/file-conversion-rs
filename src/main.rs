@@ -1,6 +1,4 @@
 use std::{fs::File};
-use crate::conversions::png_to_jpg::convert_png_to_jpeg;
-use crate::conversions::{jpg_to_png::convert_jpeg_to_png};
 use std::path::Path;
 use image::{open, save_buffer_with_format, ImageFormat};
 use std::env::{current_dir};
@@ -8,8 +6,8 @@ use std::io;
 
 
 mod conversions {
-    pub mod png_to_jpg;
-    pub mod jpg_to_png;
+    pub mod gif;
+    pub mod mp4;
 }
 
 
@@ -22,12 +20,19 @@ fn main() {
     let pick = module.trim();
     match pick {
         "1" => {
-            convert_png_to_jpeg();
+            conversions::gif::convert_gif_file();
             break;
         }
         "2" => {
-            convert_jpeg_to_png();
+            conversions::mp4::convert_mp4_file()
+        }
+
+        "3" => {
             break;
+        }
+
+        "4" => {
+            
         }
 
         "exit" => {
@@ -41,3 +46,4 @@ fn main() {
 }
    
 }
+

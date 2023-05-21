@@ -265,7 +265,7 @@ cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
 CRATE_CC_NO_DEFAULTS = None
 DEBUG = Some("true")
 CARGO_CFG_TARGET_FEATURE = Some("aes,crc,dit,dotprod,dpb,dpb2,fcma,fhm,flagm,fp16,frintts,jsconv,lor,lse,neon,paca,pacg,pan,pmuv3,ras,rcpc,rcpc2,rdm,sb,sha2,sha3,ssbs,vh")
-stdout of /Users/Mox/Downloads/file-conversion-rs/target/debug/build/ffmpeg-sys-next-a55d046b804df558/out/check=[FF_API_OLD_AVOPTIONS]00
+stdout of /Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/build/ffmpeg-sys-next-a55d046b804df558/out/check=[FF_API_OLD_AVOPTIONS]00
 [FF_API_PIX_FMT]00
 [FF_API_CONTEXT_SIZE]00
 [FF_API_PIX_FMT_DESC]00

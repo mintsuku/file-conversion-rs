@@ -1,0 +1,14 @@
+/Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/deps/ffmpeg_sys_next-22bb5c1da9430c47.rmeta: /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/lib.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/mod.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/macros.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/error.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/util.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/rational.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/pixfmt.rs /Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/build/ffmpeg-sys-next-a55d046b804df558/out/bindings.rs
+
+/Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/deps/ffmpeg_sys_next-22bb5c1da9430c47.d: /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/lib.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/mod.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/macros.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/error.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/util.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/rational.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/pixfmt.rs /Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/build/ffmpeg-sys-next-a55d046b804df558/out/bindings.rs
+
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/lib.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/mod.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/macros.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/error.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/util.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/rational.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/ffmpeg-sys-next-6.0.1/src/avutil/pixfmt.rs:
+/Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/build/ffmpeg-sys-next-a55d046b804df558/out/bindings.rs:
+
+# env-dep:OUT_DIR=/Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/build/ffmpeg-sys-next-a55d046b804df558/out

@@ -7,11 +7,18 @@ use image::{open, ImageFormat, image_dimensions};
 use std::env::current_dir;
 use std::thread::sleep;
 use std::time::Duration;
+use std::io::stdout;
+use crate::logo;
 use dialoguer::Select;
 use std::path::Path;
 use crossterm::ExecutableCommand;
 use crossterm::terminal::{Clear, ClearType};
+use std::{fs::File};
+use console::style;
+use std::io;
 extern crate dirs;
+
+
 
 pub fn convert_gif_to_mp4(input_path: &Path) {
     let mut output_path = match dirs::download_dir() {
@@ -68,6 +75,11 @@ pub fn convert_gif_to_jpeg(input_path: &Path) {
         Some(path) => path,
         None => {
             eprintln!("Failed to determine the user's download directory.");
+            sleep(Duration::from_secs(2));
+            let mut stdout = std::io::stdout();
+            stdout.execute(Clear(ClearType::All)).unwrap();
+            logo();
+            convert_gif_file();
             return;
         }
     };
@@ -101,6 +113,7 @@ pub fn convert_gif_to_ico(input_path: &Path) {
         sleep(Duration::from_secs(2));
         let mut stdout = std::io::stdout();
         stdout.execute(Clear(ClearType::All)).unwrap();
+        logo();
         convert_gif_file();
     } else {
         image.save_with_format(ico_path, ImageFormat::Ico)

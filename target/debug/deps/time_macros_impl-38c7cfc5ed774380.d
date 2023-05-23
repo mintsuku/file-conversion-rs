@@ -1,0 +1,11 @@
+/Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/deps/libtime_macros_impl-38c7cfc5ed774380.dylib: /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/lib.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/date.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/ext.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/offset.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time_crate/mod.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time_crate/date.rs
+
+/Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/deps/time_macros_impl-38c7cfc5ed774380.d: /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/lib.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/date.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/ext.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/offset.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time_crate/mod.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time_crate/date.rs
+
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/lib.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/date.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/ext.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/offset.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time_crate/mod.rs:
+/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/time-macros-impl-0.1.2/src/time_crate/date.rs:

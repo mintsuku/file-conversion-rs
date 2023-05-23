@@ -4,6 +4,13 @@ use std::io;
 use std::thread::sleep;
 use std::time::Duration;
 use crossterm::ExecutableCommand;
+use printpdf::*;
+use std::io::{BufReader, Error};
+use std::convert::TryInto;
+
+use printpdf::*;
+use ::image::io::Reader as ImageReader;
+use ::image::*;
 
 
 mod conversions {
@@ -11,6 +18,13 @@ mod conversions {
     pub mod mp4;
     pub mod png;
 }
+
+
+
+
+
+
+
 
 
 

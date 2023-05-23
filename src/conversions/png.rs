@@ -6,6 +6,7 @@ use dialoguer::Input;
 use image::*;
 use webp::*;
 use std::env::current_dir;
+use crate::logo;
 use std::thread::sleep;
 use std::time::Duration;
 use dialoguer::Select;
@@ -43,6 +44,45 @@ pub fn convert_png_to_jpeg(input_path: &Path) {
         Err(err) => {
             eprintln!("Failed to open PNG image: {}", err);
         }
+    }
+}
+
+
+pub fn convert_png_to_ico(input_path: &Path) {
+    let mut output_dir = match dirs::download_dir() {
+        Some(path) => path,
+        None => {
+            eprintln!("Failed to determine the user's download directory.");
+            return;
+        }
+    };
+
+    let img = match open(input_path) {
+        Ok(img) => img,
+        Err(err) => {
+            eprintln!("Failed to open PNG image: {}", err);
+            return;
+        }
+    };
+
+    let (w, h) = img.dimensions();
+    if w < 1 || w > 256 || h < 1 || h > 256 {
+        println!("PNG width and height must be 1 - 256");
+        sleep(Duration::from_secs(2));
+        let mut stdout = std::io::stdout();
+        stdout.execute(Clear(ClearType::All)).unwrap();
+        logo();
+        convert_png_file();
+    } else {
+        let file_name = input_path.file_name().unwrap().to_str().unwrap();
+        let file_name2 = file_name.trim_end_matches(".png");
+        output_dir.push(format!("{}.ico", file_name2));
+        let ico_path = Path::new(&output_dir);
+
+        match img.save_with_format(ico_path, ImageFormat::Ico) {
+            Ok(_) => println!("Successfully saved {} to {:?}", file_name2, output_dir),
+            Err(err) => eprintln!("Failed to save image as ICO: {}", err),
+        };
     }
 }
 
@@ -145,7 +185,7 @@ pub fn convert_png_file() {
             
             match path_result {
                 Ok(Some(path)) => {
-                    let single_choices = vec!["PNG to JPEG", "PNG to WEBP", "PNG to AVIF"];
+                    let single_choices = vec!["PNG to JPEG", "PNG to WEBP", "PNG to AVIF", "PNG to ICO"];
                     let single_index = Select::new()
                         .items(&single_choices)
                         .default(0)
@@ -156,6 +196,7 @@ pub fn convert_png_file() {
                         0 => convert_png_to_jpeg(&path),
                         1 => convert_png_to_webp(&path),
                         2 => convert_png_to_avif(&path),
+                        3 => convert_png_to_ico(&path),
                         _ => println!("Invalid choice."),
                     }
                 }
@@ -168,7 +209,7 @@ pub fn convert_png_file() {
             }
         }
         1 => {
-            let bulk_choices = vec!["PNG to JPEG", "PNG to WEBP", "PNG to AVIF"];
+            let bulk_choices = vec!["PNG to JPEG", "PNG to WEBP", "PNG to AVIF", "PNG to ICO"];
             let bulk_index = Select::new()
                 .items(&bulk_choices)
                 .default(0)
@@ -245,6 +286,31 @@ pub fn convert_png_file() {
                             if let Some(extension) = entry.path().extension() {
                                 if extension == "png" {
                                     convert_png_to_avif(&entry.path());
+                                }
+                            }
+                        }
+                    }
+                }
+
+                3 =>  {
+                    let folder_path = Input::<String>::new()
+                        .with_prompt("Enter folder path:")
+                        .interact()
+                        .unwrap();
+
+                    let dir_entries = match std::fs::read_dir(&folder_path) {
+                        Ok(entries) => entries,
+                        Err(err) => {
+                            eprintln!("Failed to read directory entries: {}", err);
+                            return;
+                        }
+                    };
+
+                    for entry in dir_entries {
+                        if let Ok(entry) = entry {
+                            if let Some(extension) = entry.path().extension() {
+                                if extension == "png" {
+                                    convert_png_to_ico(&entry.path());
                                 }
                             }
                         }

@@ -7,7 +7,6 @@ use std::path::Path;
 use std::path::PathBuf;
 extern crate dirs;
 
-
 pub fn convert_jpeg_to_png() {
     let path_result = FileDialog::new()
         .set_location("~/Desktop")

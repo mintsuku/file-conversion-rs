@@ -4,19 +4,13 @@ use std::io;
 use std::thread::sleep;
 use std::time::Duration;
 use crossterm::ExecutableCommand;
-use printpdf::*;
-use std::io::{BufReader, Error};
-use std::convert::TryInto;
-
-use printpdf::*;
-use ::image::io::Reader as ImageReader;
-use ::image::*;
 
 
 mod conversions {
     pub mod gif;
     pub mod mp4;
     pub mod png;
+    pub mod jpeg;
 }
 
 
@@ -53,7 +47,8 @@ fn main() {
     let modules = [
         ("1", "GIF Conversions"),
         ("2", "MP4 Conversions"),
-        ("3", "PNG Conversions\n\n"),
+        ("3", "PNG Conversions"),
+        ("4", "JPEG Conversions\n\n"),
         ("Exit", "Type Exit to halt the program.")
     ];
 
@@ -101,7 +96,12 @@ fn main() {
         }
 
         "4" => {
-            
+            stdout.execute(Clear(ClearType::All)).unwrap();
+            logo();
+            conversions::jpeg::convert_jpeg_file();
+            sleep(Duration::from_secs(2));
+            stdout.execute(Clear(ClearType::All)).unwrap();
+            main();
         }
 
         "exit" => {

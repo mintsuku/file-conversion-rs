@@ -1,21 +1,14 @@
-use std::path::PathBuf;
 use std::process::Command;
-use std::env;
 use native_dialog::FileDialog;
 use dialoguer::Input;
 use image::{open, ImageFormat, image_dimensions};
-use std::env::current_dir;
 use std::thread::sleep;
 use std::time::Duration;
-use std::io::stdout;
 use crate::logo;
 use dialoguer::Select;
 use std::path::Path;
 use crossterm::ExecutableCommand;
 use crossterm::terminal::{Clear, ClearType};
-use std::{fs::File};
-use console::style;
-use std::io;
 extern crate dirs;
 
 

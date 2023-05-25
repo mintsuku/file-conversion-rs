@@ -1,11 +1,8 @@
-use std::path::PathBuf;
 use std::process::Command;
-use std::env;
 use native_dialog::FileDialog;
 use dialoguer::Input;
 use image::*;
 use webp::*;
-use std::env::current_dir;
 use crate::logo;
 use std::thread::sleep;
 use std::time::Duration;

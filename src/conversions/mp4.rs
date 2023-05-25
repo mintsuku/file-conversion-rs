@@ -1,12 +1,6 @@
-use std::path::PathBuf;
 use std::process::Command;
-use std::env;
 use native_dialog::FileDialog;
 use dialoguer::Input;
-use image::{codecs::png, open, ImageFormat, image_dimensions};
-use std::env::current_dir;
-use std::thread::sleep;
-use std::time::Duration;
 use dialoguer::Select;
 use std::path::Path;
 use crossterm::ExecutableCommand;

@@ -66,6 +66,23 @@ cargo run
 That's it! Just follow the options the UI to convert whatever you want!
 
 
+## License
+This file conversion tool is open-source software licensed under the MIT License. Feel free to modify and distribute it according to your needs.
+
+## Contributing
+If you would like to contribute to this project, you can submit issues or pull requests on the [GitHub repository](https://github.com/shelovesmox/file-conversion-rs). Your contributions are highly appreciated!
+
+## Acknowledgments
+This tool relies on the powerful FFmpeg library for media conversions. Many thanks to the FFmpeg development team for their excellent work. This tool also relies on many crates made by talented developers to convert image formats, without them I would not have been able to make this project
+- [Image crate](https://crates.io/crates/image)
+- [Gif crate](https://crates.io/crates/gif)
+- [Webp crate](https://crates.io/crates/webp)
+
+## Disclaimer
+This tool is provided as-is, without any warranties or guarantees. Use it at your own risk. The authors and contributors of this tool are not responsible for any damages or losses that may occur from its use.
+
+
+
 
 
 

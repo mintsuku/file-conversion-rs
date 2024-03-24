@@ -1,9 +1,0 @@
-/Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/deps/libproc_macro_hack-31f000cd95ce630f.dylib: /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/lib.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/quote.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/error.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/iter.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/parse.rs
-
-/Users/Mox/Desktop/Projects/rust/file-conversion-rs/target/debug/deps/proc_macro_hack-31f000cd95ce630f.d: /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/lib.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/quote.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/error.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/iter.rs /Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/parse.rs
-
-/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/lib.rs:
-/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/quote.rs:
-/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/error.rs:
-/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/iter.rs:
-/Users/Mox/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro-hack-0.5.20+deprecated/src/parse.rs:
